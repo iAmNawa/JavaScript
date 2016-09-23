@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bubbling</title>
+    <link rel="stylesheet" href="cVsB.css">
+  </head>
+
+  <body class="body item">
+    <div class="first item">
+      <div class="second item">
+        <div class="third item">
+          <button class="fourth item">Click here</button>
+        </div>
+      </div>
+    </div>
+
+
+<script>
+  var items = document.getElementsByClassName("item")
+  for (var i = 0; i < items.length; i++) {
+    (function () {
+      var y = i
+      items[y].addEventListener("click", function (event) {
+        console.log(items[y], event)
+      }, false)
+    })()
+  }
+</script>
+
+  </body>
+</html>
