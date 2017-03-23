@@ -1,0 +1,7 @@
+polar
+brown
+koala
+cheetah
+grizzly
+puma
+jaguar
